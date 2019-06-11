@@ -13,6 +13,7 @@ import AuthRoute from './component/authroute/authroute'
 import EmployeeInfo from './container/info/employeeInfo'
 import EmployerInfo from './container/info/employerInfo'
 import Dashboard from './component/dashboard/dashboard'
+import Chat from './component/chat/chat'
 const store = createStore(reducers, compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f=>f
@@ -30,6 +31,7 @@ ReactDOM.render(
                     <Route path='/employee/info' component={EmployeeInfo}></Route>
                     <Route path='/login' component={Login}></Route>
                     <Route path='/Register' component={Register}></Route>
+                    <Route path='/chat/:user' component={Chat}></Route>
                     <Route component={Dashboard}></Route>
                 </Switch>
                 

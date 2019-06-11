@@ -6,6 +6,8 @@ import {connect} from 'react-redux'
 import '../../index.css'
 import {Redirect} from 'react-router-dom'
 
+
+
 @connect(
     state=>state.user,
     {login}
